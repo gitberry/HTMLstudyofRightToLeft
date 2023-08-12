@@ -2,8 +2,8 @@
 
 ## Starting question:
 I was wondering if there was an html analogue to the unicode right to left "technique".
-(here's the totally cool URL to that: <a target="blank" href="https://www.freecodecamp.org/news/rtlo-in-hacking/">https://www.freecodecamp.org/news/rtlo-in-hacking/</a>
-I decided to do a quick grok of the idea.
+<br/>(here's the totally cool URL to that: <a target="blank" href="https://www.freecodecamp.org/news/rtlo-in-hacking/">https://www.freecodecamp.org/news/rtlo-in-hacking/</a>
+<br/>I decided to do a quick grok of the idea.
 		  		  
 ## Approach:
 
