@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>HTML experiment in Right To Left</title>
+	  <style>
+		  .my-rtl {direction:RTL; unicode-bidi:embed; color:pink}
+		  .vertical {writing-mode: tb-rl;color:red}
+	  </style>
+  </head>
+  <body>
+	  <div>
+		  <p>Starting question:
+		  I was wondering if there was an html analogue to the unicode right to left "technique".
+			  (here's the totally cool URL to that: <a target="blank" href="https://www.freecodecamp.org/news/rtlo-in-hacking/">https://www.freecodecamp.org/news/rtlo-in-hacking/</a>
+		  </p>
+		  
+		  <p>Approach:I searched a lot of RTL pages, and tried their techniquesto see how to get the characters or failing that - the words to be in right to left order - wrapping appropriately and tried them above with varying results (below).
+		  </p>
+<p>		  Conclusion: It doesn't seem to be directly translatable.  One thought late in the experiment was this: scour the RTL languages unicode for certain characters that might look like LTR characters and then work it.  Likely will look pretty wonky and not as effective as the windows unicode technique that inspired all this.  Nonetheless, it may be the subject of a future grok.   
+		  </p>	  
+	  </div>
+	  <div>
+<hr>	  
+	  <p>This is a normal paragraph with lots of words to make it wrap.  This is a normal paragraph with lots of words to make it wrap.  This is a normal paragraph with lots of words to make it wrap.  This is a normal paragraph with lots of words to make it wrap.  This is a normal paragraph with lots of words to make it wrap.  This is a normal paragraph with lots of words to make it wrap. </p>
+	  <hr>
+	  <p dir="rtl">This is a few words in left to right</p>
+	  <hr>
+	  <p dir="rtl" lang="ar">And this is a number of words, all of which should start in the upper right and proceed left and are of enough length to wrap many times and should progrogress to the left, wrap, start one line lower on the right hand side and repeat until it is complete.  This will repeat again for a few times. And this is a number of words, all of which should start in the upper right and proceed left and are of enough length to wrap many times and should progrogress to the left, wrap, start one line lower on the right hand side and repeat until it is complete.!  This will repeat again for a few times. And this is a number of words, all of which should start in the upper right and proceed left and are of enough length to wrap many times and should progrogress to the left, wrap, start one line lower on the right hand side and repeat until it is complete.  This will repeat again for a few times. And this is a number of words, all of which should start in the upper right and proceed left and are of enough length to wrap many times and should progrogress to the left, wrap, start one line lower on the right hand side and repeat until it is complete.  This will repeat again for a few times. And this is a number of words, all of which should start in the upper right and proceed left and are of enough length to wrap many times and should progrogress to the left, wrap, start one line lower on the right hand side and repeat until it is complete!  This will repeat again for a few times!
+	  </p>
+	  <hr>
+	  <p dir="rtl">this is "a test"</p>
+	  <hr>
+	  <p dir="rtl">this| is | a | test</p>
+	  <hr>
+	  <span dir="rtl">trying a span</span>
+	  <hr>
+	  <span style="direction:RTL; unicode-bidi:embed;">span try number two</span>
+<hr>
+<span class="my-rtl"> force neutrals right-to-left  </span>
+<hr>
+	  <span class="vertical">Force vertical and right to left.</span>
+	  <hr>
+	  the title says "&#x2067;INTERNATIONALIZATION ACTIVITY, w3c&#x2066;" in klingon.
+	  <hr>
+	  &#x2067;One Two Three Four Five
+	  <hr>
+	  &#x2066;One Two Three Four Five
+	  <hr>
+	  	  &#x2067;One Two Three Four Five
+	  <hr>
+	  	  &#x2067;1one 2two 3three 4four 5five
+	  <hr>
+	  	  &#x2067;1 2 3 4 5 654321
+	  <hr>
+	  	  &#x2067;1&nbsp;2 3 4 5 654321
+	  <hr>
+	  	  &#x2067;1 &#67; 2 3 4 5 654321
+	  <hr>
+
+	  <p>we find the phrase '<span dir="rtl">INTERNATIONALIZATION ACTIVITY</span>&lrm;' 5 times on the page.</p>
+	  <hr>
+	  </div>
+	</body>
+</html>
